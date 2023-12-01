@@ -82,7 +82,6 @@ theme:
   custom_dir: 'docs/assets/overrides'
   static_templates:
     - 404.html
-    
 extra:
 # Google analytics
   analytics:
