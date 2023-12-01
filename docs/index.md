@@ -1,7 +1,7 @@
 ---
 hide:
   - navigation
-title: Parco a mare allo Sperone
+title: Elenco elaborati progetto Parco a mare allo Sperone del Comune di Palermo
 ---
 
 
@@ -15,6 +15,7 @@ Gli elaborati di progetto sono visionabili anche tramite il seguente **[link](ht
 
 Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiunque può presentare osservazioni, ai sensi e per gli effetti della L.R. 19/2020, art. 26 c. 15 16 e 20, da inoltrare per posta all'indirizzo di cui sopra o tramite i seguenti indirizzi [progettazionemarecosteparchieriserve@cert.comune.palermo.it](mailto:progettazionemarecosteparchieriserve@cert.comune.palermo.it) o mail [settorepoliticheambientali@comune.palermo.it](mailto:settorepoliticheambientali@comune.palermo.it)
 
+# Localizzazione area
 <div>
 <iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=13.390939235687256%2C38.09520381036535%2C13.40535879135132%2C38.11031602478667&amp;layer=mapnik&amp;marker=38.10276875086672%2C13.398149013519287" style="border: 1px solid black"></iframe>
 </div>
@@ -47,4 +48,6 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
                                                                                                                                                                                                                                         | [SF20 Planimetria alberature esistenti](stato_di_fatto/SF20 - Planimetria alberature esistenti.pdf "SF20 - Planimetria alberature esistenti ") {:target="_blank"}       
 
 
+
+# Planimetria di progetto
 [![SP01 - Planimetria di progetto](img/SP01.jpg "SP01 - Planimetria di progetto" )](progetto/SP01 - Planimetria di progetto.pdf){:target="_blank"}
