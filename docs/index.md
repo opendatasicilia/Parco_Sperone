@@ -28,7 +28,7 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 
 ???+ info
 
-    **Le tavole sono realizzate nel formato .pdf**<br>
+    **Le tavole sono realizzate in formato .pdf**<br>
 	Per una corretta visualizzazione dei file .pdf si consiglia di installare nel proprio pc, tablet o smartphone il programma di visualizzazione gratuito [Adobe Acobat Reader](https://get.adobe.com/reader/?loc=it) o [App mobile Adobe Acrobat Reader](https://acrobat.adobe.com/it/it/acrobat/mobile-app.html) per tutte le varie piattaforme mobile.
 
 <div>
