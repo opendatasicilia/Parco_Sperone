@@ -1,1 +1,0 @@
-# Elaborati Generali analitico descrittivi
