@@ -65,7 +65,7 @@ theme:
     - navigation.top
     - navigation.instant
  #   - navigation.prune
-    - navigation.tabs
+ #   - navigation.tabs
   #  - navigation.tabs.sticky
    # - navigation.sections
   #  - navigation.expand

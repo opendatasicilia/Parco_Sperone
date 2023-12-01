@@ -18,7 +18,7 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 
 # Localizzazione area
  <div>
-<iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=13.390939235687256%2C38.09520381036535%2C13.40535879135132%2C38.11031602478667&amp;layer=mapnik&amp;marker=38.10276875086672%2C13.398149013519287" style=" border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3); border-radius: 5px;  moz-border-radius: 5px;   aspect-ratio: auto;"></iframe>
+<iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=13.390070199966432%2C38.098783745893726%2C13.407901525497438%2C38.10640741091152&amp;layer=mapnik&amp;marker=38.10259989913318%2C13.39898586273193" style=" border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3); border-radius: 5px;  moz-border-radius: 5px;   aspect-ratio: auto;"></iframe>
 </div>
 <br>
 # Elenco elaborati
