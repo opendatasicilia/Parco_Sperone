@@ -80,11 +80,11 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 				ex:expression=".tag"
 			     ex:facetLabel="Tag"
 				ex:sortMode="count">
-			</div> -->
-     			</div>
+			</div>
+     			</div> -->
 			<div class="col-md-2 column"><br />
 				<div ex:role="facet"
-				ex:expression=".Elaborati"
+				ex:expression=".elaborati"
 				ex:facetLabel="Elaborati" 
 				ex:sortDescending="true">
 				<!--	ex:sortMode="count" -->
@@ -145,9 +145,9 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 					<div ex:role="exhibit-view"
 					ex:viewClass="Exhibit.TabularView"
 					ex:label="Table"
-					ex:columns=".Elaborati,.Titolo,.categoria,.anno"
-					ex:columnLabels="Elaborati, Tavola, Categoria, Anno,"
-					ex:columnFormats="list,list,list,list,list"
+					ex:columns=".elaborati,.titolo,.categoria,.anno"
+					ex:columnLabels="Elaborato, Tavola, Categoria, Anno,"
+					ex:columnFormats="list,list,list,list,list,list"
 					ex:sortColumn="1"
 					ex:sortAscending="true"
 					ex:tableStyler="tableStyler">
@@ -155,13 +155,13 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 					<div class="table-responsive">
 							<table class="table" ex:class-content=".territorio">
 								<tr>
-								<td><span ex:content=".anno"></td>
+								<td><span ex:content=".elaborati"></td>
 	<td><a ex:href-content=".URL" ex:title-content=".titolo" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".titolo" ></span></strong></a></td>
    								<!--	 <td><span ex:content=".descrizione"></td> -->
   <td ><a ex:href-content=".URL" ex:title-content=".titolo"  ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".immago" class="clip_tooltips"></span></strong></a></td>
 					<td><span ex:content=".categoria"></td>
                                   <!--  <td><span ex:content=".tag"></span></td> -->
-                                    <td><span ex:content=".Elaborati"></span></td>
+                                    <td><span ex:content=".elaborati"></span></td>
 									<td><a ex:href-content=".primamappa" ex:onclick-subcontent="trackOutboundLink('.primamappa'); return false;" title="Prima mappa rielaborata"  target="_blank"><strong><span ex:content=".titolo_pm" ></span></strong></a></td>
                                     <td><span ex:content=".fontedati"></td>
 								</tr>
