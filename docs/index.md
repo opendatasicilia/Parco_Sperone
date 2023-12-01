@@ -5,7 +5,6 @@ title: Elenco elaborati progetto Parco a mare allo Sperone del Comune di Palermo
 social_image: assets/img/social/social_card.jpg
 ---
 
-
 # Parco a mare allo Sperone
 
 In data **15.11.2023** con **deliberazione n.328** il Consiglio Comunale ha approvato, ai sensi e per gli effetti dell’art.19 del D.P.R. 327/2001, il progetto dell’intervento denominato “Parco a mare allo Sperone”, finanziato con fondi del P.N.R.R. – M5c2 – Investimento 2.2 – P.U.I. Città Metropolitana di Palermo.
