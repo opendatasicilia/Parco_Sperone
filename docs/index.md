@@ -22,8 +22,6 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 
 </div>
 <br>
-
-
 # Elenco elaborati
 
 ???+ info
