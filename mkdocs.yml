@@ -1,0 +1,281 @@
+## Project information
+site_name: Comune di Palermo | Parco a mare allo Sperone
+site_url: 
+site_author: gbvitrano
+site_description: >-
+   Comune di Palermo | Parco a mare allo Sperone
+
+
+## Repository
+# repo_name: coseerobe.github.io
+# repo_url: https://github.com/coseerobe/coseerobe.github.io
+# edit_uri: edit/main/docs/ #disables edit button
+
+# Copyright
+copyright: Un progetto della comunità <a href="https://opendatasicilia.it/"><b>OpenDataSicilia</b></a> <br> <b>Disclaimer:</b> Le informazioni visibili e condivise non comportano la visualizzazione di dati sensibili.<br> Data la natura esclusivamente informativa degli elaborati grafici e dei testi riportati, questi non costituiscono atti ufficiali.<br> Per accedere agli atti ufficiali si rinvia agli elaborati definitivi allegati alle specifiche deliberazioni.
+
+theme:
+  name: material
+  highlightjs: true
+  language: it
+  palette:
+#    - scheme: preference
+    primary: white
+    accent: red
+#      toggle:
+#        icon: material/weather-night
+#        name: Switch to dark mode
+#    - scheme: slate
+#      primary: indigo
+#      accent: indigo
+#      toggle:
+#        icon: material/weather-sunny
+#        name: Switch to light mode
+  language: it
+  favicon: assets/img/favicon.png
+  icon:
+    annotation: material/star-four-points-circle
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    tag:
+      default: material/tag
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3    
+      Incendi: fontawesome/solid/fire
+      
+  logo: assets/img/logo.png
+  
+  features:
+  #  - header.autohide
+  #  - navigation.path
+    - toc.integrate
+    - toc.follow
+    - navigation.top
+    - navigation.instant
+ #   - navigation.prune
+    - navigation.tabs
+  #  - navigation.tabs.sticky
+   # - navigation.sections
+  #  - navigation.expand
+    - navigation.tracking
+    - navigation.indexes
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+
+  font:
+    text: Nunito Sans
+    code: Fira Code
+  custom_dir: 'docs/assets/overrides'
+  static_templates:
+    - 404.html
+    
+extra:
+# Google analytics
+  analytics:
+    provider: google
+    property: G-Y2YZ7RDXWM
+# Consenso ai cookie     
+  consent:
+    title: Consenso ai cookie
+    description: >-
+        <img src="https://coseerobe.it/assets/img/logo.svg" class="immagonobox resized33"  alt=Cose&#038;Robe &#8211; Rielaborazioni dataset opendata" title="Cose&#038;Robe &#8211; Rielaborazioni dataset opendata" width="100" border="0"><br><b>Questo sito, cose&robe.it.it utilizza i cookie, anche di terze parti, per migliorare la vostra esperienza di navigazione web.</b> <br>Chiudendo questo messaggio, scorrendo questa pagina o cliccando su qualunque suo elemento acconsenti all&rsquo;uso dei cookie.<br> Per maggiori informazioni o per negare il  consenso a tutti o ad alcuni cookie, consulta l&rsquo;<a href="https://coseerobe.it/privacy/" title="Informativa privacy estesa" target="_parent">informativa</a>!
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
+    actions:
+      - accept
+      - manage   
+      
+# TAGS
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    Incendi: Incendi
+    
+  manifest: "manifest.webmanifest"
+  
+  social:
+    - icon: ods
+      link: http://opendatasicilia.it/
+      name: opendatasicilia.it  
+    - icon: fontawesome/brands/github
+      link: https://github.com/coseerobe/coseerobe.github.io
+      name: Repository GitHub  
+    - icon: fontawesome/solid/envelope
+      link: mailto:coseerobe.gbvitrano@gmail.com
+      name: coseerobe.gbvitrano@gmail.com
+    - icon: fontawesome/brands/twitter
+      link: http://twitter.com/gbvitrano
+      name: Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/gbvitrano
+      name: Facebook      
+    - icon: fontawesome/solid/rss
+      link: https://arigadicomando.it/feed_rss_created.xml
+      name: Feed RSS
+    - icon: fontawesome/brands/creative-commons
+      link: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+      name: Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY-SA 4.0)     
+ #   - icon: fontawesome/brands/creative-commons-by
+ #     link: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+ #     name: Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY-SA 4.0)   
+ #   - icon: fontawesome/brands/creative-commons-sa
+ #     link: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+ #     name: Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY-SA 4.0)         
+         
+plugins:
+- search:
+      lang: it
+- glightbox:
+      auto_caption: true 
+- mkdocstrings
+#- macros
+#- charts
+- tags:
+    tags_file: tags.md
+        
+- blog:
+    blog_dir: blog
+    post_dir: blog/posts
+    pagination_keep_content: true
+    pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+    pagination_per_page: 5
+    authors_file: blog/.authors.yml
+    blog_toc: false
+    categories_toc: false
+    archive_toc: false
+    post_url_format: "{categories}/{slug}"
+    post_slugify_separator: "-"
+    post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
+    post_excerpt: optional
+    archive_name: Archivio
+    categories_slugify_separator: "-"
+    categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
+   
+- rss:
+    match_path: blog/posts/.*
+    use_git: false
+    date_from_meta:
+      as_creation: date
+    categories:
+      - categories
+      - tags
+      
+# Social Card      
+# - social:
+#    cards_dir: assets/img/social
+
+ # foglio di stile personalizzato
+extra_css:
+  - assets/stylesheets/gbextra.css
+ 
+  
+extra_javascript:
+  # - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  # - javascripts/tables.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - assets/javascripts/varie.js
+  - assets/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - meta
+  - mkdocs-click
+  - pymdownx.betterem:
+        smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic:
+        mode: view
+  - pymdownx.details
+  - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+        options:
+          custom_icons:
+            - overrides/.icons        
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+#          - name: vegalite
+#            class: vegalite
+#            format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+  - pymdownx.tabbed:
+        alternate_style: true
+  - def_list      
+  - pymdownx.tasklist:
+        custom_checkbox: true
+        clickable_checkbox: true
+  - pymdownx.tilde
+  - toc:
+        permalink: true
+        toc_depth: 3
+  - pymdownx.arithmatex:
+        generic: true
+  - pymdownx.keys
+  
+# menu
+nav:
+  - Home: index.md
+#  - Elaborati Generali analitico descrittivi: 
+ #   - generale/elenco.md
+ #   - R00 Elenco elaborati: generale/R00 - Elenco elaborati.pdf
+ #   - R01 Relazione Generale:  generale/R01 - Relazione Generale.pdf
+ #   - R02 Relazione tecnica: generale/R02 - Relazione tecnica.pdf
+ #   - R03 Relazione Paesaggistica: generale/R03 - Relazione Paesaggistica.pdf
+ #   - R04 Verifica preventiva dell'interesse Archeologico: generale/R04 - Verifica preventiva dell_interesse Archeologico.pdf
+ #   - R05 Studio Geologico: generale/R05 - Studio Geologico.pdf
+ #   - R06 Studio di prefattibilità ambientale: generale/R06 - Studio di prefattibilità ambientale.pdf
+ #   - R07 Studio preliminare ambientale: generale/R07 - Studio preliminare ambientale.pdf
+ #   - R08 Relazione sulla Biocenosi: generale/R08 - Relazione sulla Biocenosi.pdf
+ #   - R09 Relazione sulla sostenibilità dell'opera: generale/R09 - Relazione sulla sostenibilità dell_opera.pdf
+ #   - R10 Prime indicazioni sulla manutenzione: generale/R10 - Prime indicazioni sulla manutenzione.pdf
+ #   - R11 Prime indicazioni sulla sicurezza: generale/R11 - Prime indicazioni sulla sicurezza.pdf
+ #   - R12 Piano Particellare espropri: generale/R12 - Piano Particellare espropri.pdf
+ #   - R13 Relazione su esiti caratterizzazione ambientale: generale/R13 - Relazione su esiti caratterizzazione ambientale.pdf
+ #   - R14 Rapporti di prova indagini ambientali: generale/R14 - Rapporti di prova indagini ambientali.pdf
+ #   - R15 Indagini geologiche: generale/R15 - Indagini geologiche.pdf
+ #   - R16 Studio Idraulico Marittimo: generale/R16 - Studio Idraulico Marittimo.pdf
+ #   - R17 Analisi di rischio sanitario e ambientale sito specifico: generale/R17 - Analisi di rischio sanitario e ambientale sito specifico.pdf
+ #   - R18 Intervento di Messa in sicurezza permanete - RELAZIONE: generale/R18 - Intervento di Messa in sicurezza permanete - RELAZIONE.pdf
+ #   - R19 Piano di Monitoraggio Ambientale: generale/R19  - Piano di Monitoraggio Ambientale.pdf
+       
+#  - Progetto architettonico - Stato di fatto: stato_di_fatto.md
+#  - Progetto architettonico - Stato di progetto: progetto.md
+#  - Documentazionestato tecnico ecomomico: documentazione.md
+ 
