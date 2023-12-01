@@ -104,6 +104,29 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 	</table> 
 	</div>
 	</div></div></div>
+		<!-- tabella solo mobile -->
+	<div class="no_desk" ex:role="viewPanel" style="padding: 0in;">
+	<div ex:role="exhibit-view" 
+	ex:viewClass="Exhibit.TabularView"  
+	ex:label="Table"  
+	ex:columns=".titolo,.immago"  
+	ex:columnLabels="Tavola, Immagine," 
+	ex:columnFormats="list"
+	ex:sortColumn="3"
+	ex:sortAscending="false"
+	ex:tableStyler="tableStyler"> 
+	<div ex:role="exhibit-lens">
+	<div class="table-responsive ">
+	<table class="table">
+	<tr>
+	<td><a ex:href-content=".URL" ex:title-content=".titolo" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_blank"><strong><span ex:content=".titolo"></strong></span></a></td> 
+		 <td ><a ex:href-content=".URL" ex:title-content=".titolo"  ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".immago" class="clip_tooltips"></span></strong></a></td>
+	</tr>
+	</table> 
+	</div>
+	</div></div></div>
+		<br></div>
+	<!-- fine blocco ricerca catalogo -->
 
 </body>
 </html>
