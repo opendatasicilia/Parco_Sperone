@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="it">
+    <head>
+<title>Database - Palermo hub - contenitore di mappe su Palermo realizzato da opendatasicilia.it</title>        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Palermo hub db">       
+     <meta name="keywords" content="Open Data, Sicilia, PAI, Geologia, CTR, PRG, Variente Generale, Palermo">
+        <meta name="author" content="Giovan Battista Vitrano per OpenDataSicilia.it">
+        <meta http-equiv="content-language" content="IT">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="creation_Date" content="05/01/2018">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" href="favicon.ico"/> 
+        <link rel="icon" href="favicon.png" type="image/png"/> 
+
+	<!-- CSS Palermo hub  -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<style type="text/css">
+body {
+	/*background-color: #FFFFFF;*/
+	overflow-x:hidden;
+	}
+img {border-radius: 5px;  -moz-border-radius: 5px;  -webkit-border-radius: 5px;border: 1px solid #ccc;background-color:#fff; padding:1px; box-shadow: 0 2px 5px rgba(0,0,0,0.2) } 
+img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
+
+/* immagine no bordo/ no ombra */
+.immagonobox {box-shadow: none !important; border: none !important;	border-radius:  none !important;	moz-border-radius: none !important; -webkit-border-radius: none !important;	background-color: transparent !important;	}	
+</style>
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  	<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    
+ <!-- Script -->
+<script type="text/javascript" src="assets/dist/jquery.min.js"></script>  
+<script type="text/javascript" src="assets/dist/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/dist/scripts.js"></script>
+
+<!-- <link rel="exhibit/data"
+    type="application/jsonp"
+    href="https://spreadsheets.google.com/feeds/list/1A-U8JCbH8Rh2PHoIHG2DL3uPNncR8DpGm3_nzBxRbHA/od6/public/basic?alt=json-in-script"
+    ex:converter="googleSpreadsheets" />  -->
+	
+	 <!-- exhibit catalogo  -->
+	<link rel="exhibit/data" 
+	ex:valueSeparator=","
+    type="text/csv"
+	href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTc0EPi8VOFO7ePO_aWf-R8km8rd212WY-gxs0SephNTNi-fqnN6sZ8jo4QKbOaVbfua2g0y1_vdHIP/pub?output=csv"  /> 
+
+	
+    <script src="assets/dist/exhibit-api.js?locale=it"></script>
+
+    <script type="text/javascript">
+    var tableStyler = function(table, database) {
+    	$(table).addClass("table table-condensed table-striped");
+    };
+    </script>
+
+</head>
+<body>
+<!-- <div class="container"> -->
+<div id="db"><br />
+
+<hr>
+<div class="row clearfix">
+  <div class="col-md-12 column"><br />
+	<strong><i class="fa fa-search fa-2x" aria-hidden="true"></i> Cerca</strong><div ex:role="facet" ex:facetClass="TextSearch"></div><br />
+			</div>
+		</div>
+		<div class="row clearfix">
+	    	<div class="col-md-12 column">
+			<div   ex:role="facet"
+				ex:facetClass="Cloud"
+				ex:expression=".tag"
+			     ex:facetLabel="Tag"
+				ex:sortMode="count">
+			</div> 
+     			</div>
+			<div class="col-md-2 column"><br />
+				<div ex:role="facet"
+				ex:expression=".collaborazione"
+				ex:facetLabel="Autore" 
+				ex:sortDescending="true">
+				<!--	ex:sortMode="count" -->
+				</div>
+			</div>
+            <div class="col-md-2 column"><br />
+				<div ex:role="facet"
+				ex:expression=".categoria"
+				ex:facetLabel="Categoria"
+				ex:sortDescending="true">
+				<!--	data-ex-missing-label="Non specificato" -->
+				</div>
+			</div>
+             <div class="col-md-2 column"><br />
+				<div ex:role="facet"
+				ex:expression=".territorio"
+				ex:facetLabel="Territorio" 
+				ex:sortDescending="true"
+				>
+				<!--	data-ex-missing-label="Non specificato" -->
+				</div>
+			</div>
+            	<div class="col-md-2 column"><br />
+				<div ex:role="facet"
+				ex:expression=".mese"
+				ex:facetLabel="Anno-Mese"
+				ex:sortDirection="reverse">
+				<!-- ex:sortDescending="true"
+					data-ex-missing-label="Non specificato" -->
+				</div>
+			</div>
+            	<div class="col-md-1 column"><br />
+				<div ex:role="facet"
+				ex:expression=".anno"
+				ex:facetLabel="Anno"
+				ex:sortDirection="reverse">
+			<!--	ex:sortDescending="true"
+				data-ex-missing-label="Non specificato" -->
+				</div>
+			</div>
+               <div class="col-md-2 column"><br />
+				<div ex:role="facet"
+				ex:expression=".fontedati"
+				ex:facetLabel="Fonte Dati"
+				ex:sortDescending="true">
+				<!--	data-ex-missing-label="Non specificato" -->
+				<!-- ex:sortMode="count"-->  
+				</div>
+		</div>
+              <div class="col-md-1 column"><br /><br /><br />
+				<!-- <img src="legend/beta.png" width="60" title="beta version" alt="beta version"> -->
+			</div>
+</div>
+        
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+            	<div ex:role="viewPanel" style="padding: 0in;">
+					<div ex:role="exhibit-view"
+					ex:viewClass="Exhibit.TabularView"
+					ex:label="Table"
+					ex:columns=".anno,.titolo,.descrizione,.immago,.categoria,.collaborazione,.primamappa,.titolo_pm,.fontedati"
+					ex:columnLabels="Anno, Titolo, Descrizione, Immagine, Categoria, Autore, Prima mappa, Fonte Dati,"
+					ex:columnFormats="list,list,list,list,list,list,list,list"
+					ex:sortColumn="1"
+					ex:sortAscending="true"
+					ex:tableStyler="tableStyler">
+					<div ex:role="exhibit-lens">
+					<div class="table-responsive">
+							<table class="table" ex:class-content=".territorio">
+								<tr>
+								<td><span ex:content=".anno"></td>
+	<td><a ex:href-content=".URL" ex:title-content=".titolo" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".titolo" ></span></strong></a></td>
+   									 <td><span ex:content=".descrizione"></td>
+  <td ><a ex:href-content=".URL" ex:title-content=".titolo"  ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".immago" class="clip_tooltips"></span></strong></a></td>
+					<td><span ex:content=".categoria"></td>
+                                  <!--  <td><span ex:content=".tag"></span></td> -->
+                                    <td><span ex:content=".collaborazione"></span></td>
+									<td><a ex:href-content=".primamappa" ex:onclick-subcontent="trackOutboundLink('.primamappa'); return false;" title="Prima mappa rielaborata"  target="_blank"><strong><span ex:content=".titolo_pm" ></span></strong></a></td>
+                                    <td><span ex:content=".fontedati"></td>
+								</tr>
+							</table> 
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+        </div>
+        
+
+
+</body>
+</html>
