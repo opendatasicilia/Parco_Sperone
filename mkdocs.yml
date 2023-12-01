@@ -92,7 +92,7 @@ extra:
   consent:
     title: Consenso ai cookie
     description: >-
-        <img src="https://opendatasicilia.github.io/Parco_Sperone/assets/img/logo.png" class="immagonobox resized33"  alt=Cose&#038;Robe &#8211; Rielaborazioni dataset opendata" title="Cose&#038;Robe &#8211; Rielaborazioni dataset opendata" width="100" border="0"><br><b>Questo sito, cose&robe.it.it utilizza i cookie, anche di terze parti, per migliorare la vostra esperienza di navigazione web.</b> <br>Chiudendo questo messaggio, scorrendo questa pagina o cliccando su qualunque suo elemento acconsenti all&rsquo;uso dei cookie.<br> Per maggiori informazioni o per negare il  consenso a tutti o ad alcuni cookie, consulta l&rsquo;<a href="https://opendatasicilia.github.io/Parco_Sperone/privacy/" title="Informativa privacy estesa" target="_parent">informativa</a>!
+       <b>Questo sito, utilizza i cookie, anche di terze parti, per migliorare la vostra esperienza di navigazione web.</b> <br>Chiudendo questo messaggio, scorrendo questa pagina o cliccando su qualunque suo elemento acconsenti all&rsquo;uso dei cookie.<br> Per maggiori informazioni o per negare il  consenso a tutti o ad alcuni cookie, consulta l&rsquo;<a href="https://opendatasicilia.github.io/Parco_Sperone/privacy/" title="Informativa privacy estesa" target="_parent">informativa</a>!
     cookies:
       analytics:
         name: Google Analytics
