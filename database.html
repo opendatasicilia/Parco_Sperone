@@ -84,9 +84,9 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 	<div ex:role="exhibit-view" 
 	ex:viewClass="Exhibit.TabularView"  
 	ex:label="Table"  
-	ex:columns=".titolo,.elaborati,.categoria,.anno"  
-	ex:columnLabels="Tavola, Elaborato, Tipologia elaborato, Anno" 
-	ex:columnFormats="list,list"
+	ex:columns=".titolo,.elaborati,.categoria,.immago"  
+	ex:columnLabels="Tavola, Immagine, Elaborato, Tipologia elaborato" 
+	ex:columnFormats="list,list,list"
 	ex:sortColumn="5"
 	ex:sortAscending="false"
 	ex:tableStyler="tableStyler"> 
@@ -95,16 +95,15 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 	<table class="table">
 	<tr>
 	<td><a ex:href-content=".URL" ex:title-content=".titolo" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_blank"><strong><span ex:content=".titolo"></strong></span></a></td> 
+		 <td ><a ex:href-content=".URL" ex:title-content=".titolo"  ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_parent"><strong><span ex:content=".immago" class="clip_tooltips"></span></strong></a></td>
 	<td><a ex:href-content=".URL" ex:title-content=".elaborati" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_blank"><strong><span class="btn btn-warning btn-xs" ex:content=".elaborati"></strong></span></a></td> 
-	
-	<!-- <td><span class="btn btn-warning btn-xs" ex:content=".elaborati"></span></td> -->
+		<!-- <td><span class="btn btn-warning btn-xs" ex:content=".elaborati"></span></td> -->
 	<td><span  ex:content=".categoria"></span></td>
-	<td><span ex:content=".anno"></span></td>
+
 	</tr>
 	</table> 
 	</div>
 	</div></div></div>
-
 
 </body>
 </html>
