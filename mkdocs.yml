@@ -173,8 +173,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
         generic: true
   - pymdownx.keys
-  
-  
+    
 # menu
 nav:
   - Home: index.md

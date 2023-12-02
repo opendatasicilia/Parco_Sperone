@@ -29,7 +29,7 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 	Per una corretta visualizzazione dei file .pdf si consiglia di installare nel proprio pc, tablet o smartphone il programma di visualizzazione gratuito [Adobe Acobat Reader](https://get.adobe.com/reader/?loc=it "Adobe Acobat Reader") o [App mobile Adobe Acrobat Reader](https://acrobat.adobe.com/it/it/acrobat/mobile-app.html "App mobile Adobe Acrobat Reader") per tutte le varie piattaforme mobile.
 
 <div>
-<iframe width="100%" height="898" src="database.html" style="border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3);   border-radius: 5px;  moz-border-radius: 2px;   aspect-ratio: auto;"></iframe>
+<iframe width="100%" height="1500" src="database.html" style="border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3);   border-radius: 5px;  moz-border-radius: 2px;   aspect-ratio: auto;"></iframe>
 </div>
 <br> 
 # Planimetria di progetto
