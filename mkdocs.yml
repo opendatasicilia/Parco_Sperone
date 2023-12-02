@@ -2,10 +2,8 @@
 site_name:  Elenco elaborati progetto Parco a mare allo Sperone | Comune di Palermo
 site_url: https://opendatasicilia.github.io/Parco_Sperone/
 site_author: gbvitrano
-site_description: >-
-   Comune di Palermo | Parco a mare allo Sperone
-
-
+site_description: Parco a mare allo Sperone
+   
 ## Repository
 # repo_name: Parco_Sperone
 # repo_url: https://github.com/opendatasicilia/Parco_Sperone
