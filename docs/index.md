@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-title: Elenco elaborati progetto Parco a mare allo Sperone del Comune di Palermo
 social_image: assets/img/social/social_card.jpg
 ---
 
