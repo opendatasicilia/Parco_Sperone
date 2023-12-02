@@ -19,7 +19,6 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 # Localizzazione area
  <div>
 <iframe width="100%" height="400px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/it/map/parco-a-mare-allo-sperone_993472?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=false#16/38.1033/13.4010" style="border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3);   border-radius: 5px;  moz-border-radius: 2px;   aspect-ratio: auto;"></iframe>
-
 </div>
 <br>
 # Elenco elaborati
