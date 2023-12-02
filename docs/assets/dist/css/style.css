@@ -59,7 +59,14 @@ ul.nav li a:hover, ul.nav li a:active {
 ul.nav li.active a {
     color: #4E4B4B !important;
 }
- @media (min-width: 320px) and (max-width: 1024px) {body {font-size: 9px; color: #4E4B4B;}}
+
+ @media (min-width: 320px) and (max-width: 1024px) {img {width: auto%; max-height:80px; aspect-ratio: auto;}} 
+ @media (min-width: 320px) and (max-width: 1024px) {body {font-size: 10px; color: #4E4B4B;}}
+ 
+ @media (min-width: 320px) and (max-width: 1024px) {.btn-sm, .btn-xs {font-size: 10px;}}
+ @media (min-width: 320px) and (max-width: 1024px) {.btn-xs {padding: 1px 2px;}}
+ @media (min-width: 320px) and (max-width: 1024px) {.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td {padding: 2px;}}
+ 
 /*a {
     color: #FF9900 !important;
 }*/
