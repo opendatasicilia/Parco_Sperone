@@ -8,7 +8,10 @@
   </p>  -->
 {% endblock %}
 {% block libs %}
+<!-- progress bar page	-->
+{% include "partials/bar.html" %}
 {{ super() }}
+
 {% endblock %}
 
 <!-- blocco meta tag e social -->
@@ -20,5 +23,4 @@
 {% block scripts %}
 {{ super() }}
 <!-- script bottom	-->
-{% include "partials/script_bottom.html" %}
 {% endblock %}

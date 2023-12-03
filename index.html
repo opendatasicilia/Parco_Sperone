@@ -116,9 +116,52 @@
 
     
     
+<!-- progress bar page	-->
+<style>
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #ff9900;
+  width: 0%;
+}
+</style>
+<!-- Qui Progress bar) --> 
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<!-- script Progress bar) --> 
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
       
     
+
 
     
       
@@ -672,21 +715,6 @@ Per una corretta visualizzazione dei file .pdf si consiglia di installare nel pr
       
     
 <!-- script bottom	-->
-
-<!-- Qui Progress bar) --> 
-<script src="https://opendatasicilia.github.io/Parco_Sperone/assets/javascripts/prognroll.min.js"></script>
-<script>
-    $(function() {
-      $("body").prognroll({
-        height: 3, //Progress bar height in pixels
-        color: "#121423", //Progress bar background color
-      });
-    });
-</script> 
-
-
-
-
 
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
