@@ -8,6 +8,11 @@
  .md-nav__title .md-nav__button.md-logo img, .md-nav__title .md-nav__button.md-logo svg {fill: currentColor; display: block; height: 2rem!important; /*width: 2.5rem !important; padding-right: 3rem; */ box-shadow: none !important;  border: none !important; border-radius: none !important; moz-border-radius: none !important; -webkit-border-radius: none !important;   background-color: transparent !important;}
 
 .md-typeset a {color: #ff9900;}
+.md-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
 
 .md-typeset table:not([class]) td {
     border-top: .05rem solid var(--md-typeset-table-color);
