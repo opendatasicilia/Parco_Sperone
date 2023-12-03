@@ -10,5 +10,4 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 
 [**Comunicato stampa del Comune di Palermo del 1.12.2023**](https://www.comune.palermo.it/palermo-informa-dettaglio.php?tp=4&id=39254)
 
-<img src="https://cdn.jsdelivr.net/gh/Andre601/devins-badges@v3.x-mkdocs-material/assets/compact/built-with/mkdocs-material_vector.svg">
-
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
