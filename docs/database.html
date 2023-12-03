@@ -27,6 +27,28 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 
 /* immagine no bordo/ no ombra */
 .immagonobox {box-shadow: none !important; border: none !important;	border-radius:  none !important;	moz-border-radius: none !important; -webkit-border-radius: none !important;	background-color: transparent !important;	}	
+
+.header {
+  position: fixed;
+  top: 0px;
+  z-index: 10000;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #ff9900;
+  width: 0%;
+}
 </style>
 
     <!-- Fav and touch icons -->
@@ -39,6 +61,19 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 <script type="text/javascript" src="assets/dist/jquery.min.js"></script>  
 <script type="text/javascript" src="assets/dist/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/dist/scripts.js"></script>
+
+<!-- progress bar --> 
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
  <!-- exhibit catalogo --> 
 <link rel="exhibit/data" 
@@ -55,7 +90,15 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
     </script>	  
 	  <!-- fine exhibit catalogo -->  
 </head>
-<!-- Primo blocco -->
+
+<!-- Qui Progress bar) --> 
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<body>
+<!-- Primo blocco --> <br>
   <section id="catalogo">
       <div class="row">
         <div class="col-lg-12 mx-auto">
@@ -63,7 +106,7 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 			 <img  class="no_mobile" src="https://img.shields.io/badge/Cerca le parole chiave-e%20ti%20fornisco%20risposte%20immediate-%23ff9900" title="Cerca le parole chiave e ti fornisco risposte immediate" /> <br><br>
 			<div ex:role="facet" ex:facetClass="TextSearch"></div>
 			</div> <br> 
-<body>
+
 	<!-- blocco ricerca catalogo   -->
 <div class="col-md-12 column">
 <div class="row clearfix">
@@ -91,7 +134,7 @@ img:hover {opacity: 1;  -webkit-filter: grayscale(100%); }
 				</div>
 			</div>
 		</div>
-		<!--tabella  -->
+		<!--tabella  --><br>
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 	<div class="no_mobile" ex:role="viewPanel" style="padding: 0in;">
