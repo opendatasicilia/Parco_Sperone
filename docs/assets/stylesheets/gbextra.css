@@ -27,7 +27,7 @@
 }
 img {    box-shadow: 0 1px 2.5px rgba(0,0,0,0.65);  border-radius: 5px;  moz-border-radius: 5px;   aspect-ratio: auto;}
 
-/* Admonitions - info*/
+/* Admonitions - info */
 .md-typeset .admonition.info, .md-typeset details.info {border-color: #0000001f;}
 .md-typeset .info>.admonition-title:before, .md-typeset .info>summary:before {background-color: #ff99008a;}
 .md-typeset .info>.admonition-title:after, .md-typeset .info>summary:after {color: #ff99008a;}

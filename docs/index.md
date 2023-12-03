@@ -16,12 +16,12 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 
 **[Comunicato stampa del Comune di Palermo del 1.12.2023](https://www.comune.palermo.it/palermo-informa-dettaglio.php?tp=4&id=39254 "Comunicato stampa del Comune di Palermo del 1.12.2023"){:target="_blank"}**
 
-# Localizzazione area
+## Localizzazione area
  <div>
 <iframe width="100%" height="400px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/it/map/parco-a-mare-allo-sperone_993472?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=false#16/38.1033/13.4010" style="border: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3);   border-radius: 5px;  moz-border-radius: 2px;   aspect-ratio: auto;"></iframe>
 </div>
 <br>
-# Elenco elaborati
+## Elenco elaborati
 
 ???+ info
 
@@ -32,5 +32,5 @@ Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiu
 <iframe width="100%" height="1500" src="database.html" style="border: 0px solid rgba(0,0,0,0.3); box-shadow: 0 1 1 rgba(0,0,0,0.3);   border-radius: 5px;  moz-border-radius: 2px;   aspect-ratio: auto;"></iframe>
 </div>
 <br> 
-# Planimetria di progetto
+## Planimetria di progetto
 [![SP01 - Planimetria di progetto](img/SP01.jpg "SP01 - Planimetria di progetto" )](progetto/SP01 - Planimetria di progetto.pdf){:target="_blank"}
