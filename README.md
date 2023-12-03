@@ -9,3 +9,6 @@ Gli elaborati di progetto sono visionabili anche tramite il seguente **[link](ht
 Nei trenta giorni successivi alla data di pubblicazione del presente avviso chiunque può presentare osservazioni, ai sensi e per gli effetti della L.R. 19/2020, art. 26 c. 15 16 e 20, da inoltrare per posta all'indirizzo di cui sopra o tramite i seguenti indirizzi [progettazionemarecosteparchieriserve@cert.comune.palermo.it](mailto:progettazionemarecosteparchieriserve@cert.comune.palermo.it) o mail [settorepoliticheambientali@comune.palermo.it](mailto:settorepoliticheambientali@comune.palermo.it).
 
 [**Comunicato stampa del Comune di Palermo del 1.12.2023**](https://www.comune.palermo.it/palermo-informa-dettaglio.php?tp=4&id=39254)
+
+<img src="https://cdn.jsdelivr.net/gh/Andre601/devins-badges@v3.x-mkdocs-material/assets/compact/built-with/mkdocs-material_vector.svg">
+
